@@ -1,0 +1,9 @@
+.downloads/
+.cache/
+.godot/
+lib/
+
+nimble.develop
+nimble.paths
+
+icons/*.import
