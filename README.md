@@ -6,18 +6,18 @@ Combine your badge with the official godot editor icon.
 
 1. place your-badge.svg(s) in the `materials/` directory.
 
-2. rename the file to `(name of class you want to apply).svg`.
+2. add `<icon/>` tag to the part of your-badge.svg where you want to insert the editor icon.
 
-   If the file with the corresponding class name does not exist in `materials/`, iConstructor searches sequentially for a file with the name of its parent.  
-   In other words, if you want to apply the material to all icons, create a `Node.svg` file, and if you want to use a different material only for Control-type classes, create another `Control.svg` file.
+   iConstructor looks for the `<icon/>` tag **recursively** and replaces that part with the editor icon elements.  
+   Attributes available for the `<icon/>` tag are summarized at the end of this document.
 
-3. add `<icon/>` tag to the part of your-badge.svg where you want to insert the editor icon.
+3. Organize the order of material files
 
-   iConstructor looks for the `<icon/>` tag and replaces that part with the editor icon elements.
+   iConstructor processes material files in alphabetical order. This means that when there are overlapping composites between multiple materials, they will be overwritten with the last material in alphabetical order.
 
 4. run `nim makeicons` to generate icons.
 
-   After execution, icons will be generated in `icons/`.  
+   After execution, icons will be generated in `icons/` (or your specified).  
    At this time, iConstructor caches a lot of information to speed up the iteration. The official icons downloaded are stored in `.downloads/`, while the classlist file, which determines which icons to download, and the missinglist file, which omits to download icons that could not be downloaded are stored in `.cache/`. If you experience problems with processing not running, try deleting these caches.
 
 ## Preview icons
@@ -31,3 +31,11 @@ When makeicons is successfully executed, three files will be updated: `preview/m
 2. execute `godot --editor preview/project.godot` to check the icon data.
 
    The first time it is run, an error occurs because the resource has not been imported into the engine. Reload the project according to the error message.
+
+## \<icon /> attributes
+
+| attribute | argument | meaning |
+| - | - | - |
+| `regex` | regular expression string | Specifies a regular expression to be applied to the material. <br> If specified together with the type attribute, the type attribute is ignored. |
+| `type` | Class name (exact match) | Specify the target of material adaptation by class name. The target is the matched class and its child classes. |
+| `outdir` | directory path (default: "icons/") | Change the output destination of the composited icons. This allows multiple patterns of icons to be generated at the same time, avoiding overwriting. |
