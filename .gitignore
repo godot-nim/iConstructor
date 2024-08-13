@@ -6,4 +6,4 @@ lib/
 nimble.develop
 nimble.paths
 
-icons/*.import
+*.import
