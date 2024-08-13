@@ -20,6 +20,8 @@ Combine your badge with the official godot editor icon.
    After execution, icons will be generated in `icons/` (or your specified).  
    At this time, iConstructor caches a lot of information to speed up the iteration. The official icons downloaded are stored in `.downloads/`, while the classlist file, which determines which icons to download, and the missinglist file, which omits to download icons that could not be downloaded are stored in `.cache/`. If you experience problems with processing not running, try deleting these caches.
 
+See inside materials/sample for specific examples. Also, delete the sample directory when actual using.
+
 ## Preview icons
 
 When makeicons is successfully executed, three files will be updated: `preview/main.tscn`, `preview/preview/bootstrap.nim`, and `preview/preview.gdextension`.
