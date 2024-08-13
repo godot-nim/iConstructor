@@ -24,13 +24,13 @@ See inside materials/sample for specific examples. Also, delete the sample direc
 
 ## Preview icons
 
-When makeicons is successfully executed, three files will be updated: `preview/main.tscn`, `preview/preview/bootstrap.nim`, and `preview/preview.gdextension`.
+When makeicons is successfully executed, three files will be updated: `preview/main.tscn`, `preview/bootstrap.nim`, and `preview/preview.gdextension`.
 
 1. run `gdextwiz build preview` to build the extension for preview.
 
    Basically, you only need to execute it for the first time.
 
-2. execute `godot --editor preview/project.godot` to check the icon data.
+2. execute `godot --editor` to check the icon data.
 
    The first time it is run, an error occurs because the resource has not been imported into the engine. Reload the project according to the error message.
 
