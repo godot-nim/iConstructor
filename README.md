@@ -13,7 +13,7 @@ Combine your badge with the official godot editor icon.
 
 3. Organize the order of material files
 
-   iConstructor processes material files in alphabetical order. This means that when there are overlapping composites between multiple materials, they will be overwritten with the last material in alphabetical order.
+   iConstructor processes material files in alphabetical order. This means that when the composite target is conflicted between multiple materials, they will be overwritten with the last material in alphabetical order.
 
 4. run `nim makeicons` to generate icons.
 
