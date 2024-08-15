@@ -13,7 +13,7 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"><icon
      outdir="upper"
-     regex=".*Cast.*|.*Light.*|Char.*|.*Node.*|XR.*|Multi.*|Navi.*|Base.*|ColorPickerButton|Skele.*|.*Sprite.*|Visi.*|BoneAttachment3D|Vehic.*|.*Polygon2D|Remote.*|Decal|Editor.*" /><defs
+     regex=".*Cast.*|.*Light.*|Char.*|.*Node.*|XR.*|Multi.*|Navi.*|Base.*|ColorPickerButton|Skele.*|.*Sprite.*|Visi.*|BoneAttachment3D|Vehic.*|.*Polygon2D|Remote.*|Decal|.*Dialog|Editor.*" /><defs
      id="defs7"><linearGradient
        id="linearGradient1"
        inkscape:collect="always"><stop
