@@ -13,7 +13,7 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"><icon
      outdir="center"
-     regex="Marker.*|ColorPicker$|Hinge.*|SliderJ.*|Generic6.*|.*Particles2.*|.*Particles3.*|.*Height.*|HTTP.*|.*Viewport.*|Range|^Camera.*" /><defs
+     regex="Marker.*|ColorPicker$|Hinge.*|SliderJ.*|Generic6.*|.*Particles[2-3]D|.*Height.*|HTTP.*|.*Viewport.*|Range|^Camera.*" /><defs
      id="defs7"><linearGradient
        id="linearGradient1"
        inkscape:collect="always"><stop
